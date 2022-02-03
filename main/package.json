@@ -1,0 +1,9 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "scripts": {
+    "sass:pro": "sass src/style.scss:style.css --style compressed",
+    "start": "sass --watch src/style.scss:/srv/cumeo/css/dest/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

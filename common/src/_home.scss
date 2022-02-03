@@ -1,0 +1,201 @@
+.wrap_search {
+  // background-color:green;
+  position: fixed;
+
+  z-index: 4;
+
+  @media (min-width: 700px) {
+    right: 50px;
+  }
+
+  .input-group {
+    max-width: 500px;
+    margin-bottom: 1px;
+    margin-top: 8px;
+  }
+  .col-centered {
+    margin: 0 auto;
+  }
+  #ketqua {
+    text-align: left;
+    padding-right: 0px;
+    border-radius: 5px;
+    height: auto;
+    z-index: 1000;
+    position: absolute;
+    background-color: rgba(230, 231, 233, 0.9);
+    border: 1px solid #ccc;
+    width: 100%;
+    a {
+      padding-bottom: 4px;
+      font-size: 18px;
+      color: #666;
+      padding-left: 5px;
+      display: block; //Make link take 100% with
+    }
+    small {
+      padding-right: 5px;
+    }
+    a:hover {
+      background-color: $main_color;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  li {
+    list-style-type: none;
+    width: 100%;
+  }
+}
+// search box overlay
+.my-visible-xs {
+  display: none;
+}
+.home-features {
+  list-style: none;
+  background-color: #f8f8f8;
+  padding: 20px 0px;
+  li:not(:last-child) {
+    margin: 10px 0px;
+    border-bottom: 1px solid $main_color;
+  }
+}
+.last-row {
+  margin-bottom: 20px;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  // background-color: rgb(0,0,0);
+  // background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+}
+@media (max-width: 700px) {
+  .my-visible-xs {
+    display: table-cell;
+  }
+  /* The overlay effect with black background */
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    // background-color: rgb(0,0,0);
+    // background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+  }
+
+  /* The content */
+  .overlay-content {
+    position: relative;
+    top: 0%;
+    width: 99%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+}
+#particles-js {
+  padding-bottom: 40px;
+  background: lightblue;
+}
+
+#our-team {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 500px;
+  h3 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 30px #00f1ff;
+  }
+  p.subtitle {
+    font-family: "Source Sans Pro Light";
+    font-size: 24px;
+    color: white;
+    margin-bottom: 80px;
+  }
+  .team img {
+    border-radius: 5%;
+    width: 220px;
+    margin: 0 auto;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #00f1ff;
+  }
+  .card h5 {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: white;
+  }
+  .card-text {
+    font-size: 14px;
+    margin-top: 20px;
+    color: white;
+  }
+  .card {
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 400px;
+    // position: relative;
+    padding: 25px 15px;
+    background-color: #00172d;
+    border: 0px !important;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 241, 255, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 241, 255, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 241, 255, 0.75);
+  }
+}
+
+.myhome {
+  h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: none;
+  }
+  .subtitle {
+    font-family: "Source Sans Pro Light";
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+}
+.home-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+// end search box overlay
+
+.my-or {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid rgb(228, 232, 237);
+  line-height: 0.1em;
+  margin: 20px 0 20px; 
+} 
+
+.my-or span { 
+   background:#fff; 
+   padding:0 10px; 
+}
